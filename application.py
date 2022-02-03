@@ -1,4 +1,3 @@
-from email.mime import application
 from flask import Flask, jsonify
 application=Flask(__name__)
 
