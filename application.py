@@ -4,7 +4,7 @@ application=Flask(__name__)
 @application.route('/')
 def main():
     #print('hello from Holland')
-    person = {'name': 'Alice', 'username': "1986"}
+    person = [{'id':1,'name': 'Alice', 'username': "1986"},{'id':2,'name': 'Gerald', 'username': "Corzo"}]
     return jsonify(person) # Returns HTTP Response with {"hello": "world"}
 
 
