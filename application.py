@@ -6,7 +6,9 @@ application=Flask(__name__)
 def main():
     #print('hello from Holland')
     person = [{'id':1,'name': 'Alice2', 'username': "1986",'Site':"https://betterprogramming.pub/data-visualization-with-swiftui-radar-charts-64124aa2ac0b"},
-    {'id':2,'name': 'Gerald', 'username': "Corzo",'Site':"https://bookauthority.org/books/new-swiftui-books"}]
+    {'id':2,'name': 'Gerald', 'username': "Corzo",'Site':"https://bookauthority.org/books/new-swiftui-books"},
+    {'id':3,'name': 'Aurelio', 'username': "Au2",'Site':"https://bookauthority.org/books/new-swiftui-books"}
+    ]
     return jsonify(person) # Returns HTTP Response with {"hello": "world"}
 
 
