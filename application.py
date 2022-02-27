@@ -12,10 +12,14 @@ def main():
     {'id':3,'name': 'Aurelio', 'username': "Au2",'Site':"https://bookauthority.org/books/new-swiftui-books"}
     ]
 
+    return jsonify(person) # Returns HTTP Response with {"hello": "world"}jsonify(person)#
+
+
+@application.route('/links')
+def LoadLinks():
     a=pd.read_csv('hilinks.csv')
     a=json.loads(a.to_json())
-    return jsonify(a) # Returns HTTP Response with {"hello": "world"}jsonify(person)#
-
+    return jsonify(a)
 
 
 @application.route('/')

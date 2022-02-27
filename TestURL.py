@@ -8,5 +8,6 @@ with urllib.request.urlopen('http://hillapp-env.eba-pwi4s6pp.us-east-1.elasticbe
 
 
    # Always start with
+   #source venv/bin/activate
    # export FLASK_APP="application.py"  
    #flask run
