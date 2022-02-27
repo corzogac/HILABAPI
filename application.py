@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+import pandas as pd
 
 application=Flask(__name__)
 
@@ -9,7 +10,9 @@ def main():
     {'id':2,'name': 'Gerald', 'username': "Corzo",'Site':"https://bookauthority.org/books/new-swiftui-books"},
     {'id':3,'name': 'Aurelio', 'username': "Au2",'Site':"https://bookauthority.org/books/new-swiftui-books"}
     ]
-    return jsonify(person) # Returns HTTP Response with {"hello": "world"}
+    a=pd.read_csv('hilinks.csv')
+
+    return jsonify(a.to_json()) # Returns HTTP Response with {"hello": "world"}jsonify(person)#
 
 
 
@@ -17,4 +20,6 @@ def main():
 def PageLand():
     return "Welcome to my test stie"
 
+
+#application.run() 
 #export FLASK_APP
