@@ -18,7 +18,7 @@ def main():
 @application.route('/links')
 def LoadLinks():
     a=pd.read_csv('hilinks.csv')
-    a=json.loads(a.to_json())
+    a=json.loads(a.to_json(orient='records'))
     return jsonify(a)
 
 
